@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bite Games</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="header__content">
+    <img src="images/menu.svg" alt="menu">
+    <a href="#">
+      <img src="images/logo.svg" alt="logo">
+    </a>
+
+    <img src="images/user-icon.svg" alt="user-icon">
+  </div>
+  <div class="notification"></div>
+</header>
+<main class="main">
+  <div class="main__content">
+    <div class="main__slider">
+      <a class="arrow-left" href="#">
+        <img src="images/arrow-left.svg" alt="arrow-left">
+      </a>
+      <div class="slider">
+        <img src="images/game-slider.png" alt="game">
+        <img src="images/game-slider-1.webp" alt="game">
+        <img src="images/game-slider-2.webp" alt="game">
+      </div>
+      <div class="dots"></div>
+      <a class="arrow-right" href="#">
+        <img src="images/arrow-right.svg" alt="arrow-right">
+      </a>
+    </div>
+    <div class="main__button-subscribe">
+      <a class="button subscribe-button" href="#">Subscribe</a>
+    </div>
+    <div class="separator"></div>
+
+  </div>
+  <div class="games new-games">
+    <div class="games-title">
+      <h2 class="games-group">New Games</h2>
+      <span class="games-counter">6</span>
+    </div>
+    <div class="games__content">
+      <a href="#">
+        <img src="images/game_1.png" alt="game">
+      </a>
+      <a href="#">
+        <img src="images/game_2.png" alt="game">
+      </a>
+      <a href="#">
+        <img src="images/game_3.png" alt="game">
+      </a>
+      <a href="#">
+        <img src="images/game_4.png" alt="game">
+      </a>
+      <a href="#">
+        <img src="images/game_5.png" alt="game">
+      </a>
+      <a href="#">
+        <img src="images/game_6.png" alt="game">
+      </a>
+    </div>
+    <div class="games-title games-title__more ">
+      <h2 class="games-group">More Games</h2>
+      <span class="games-counter plus">
+        <img src="/images/plus.svg" alt="">
+      </span>
+    </div>
+  </div>
+
+  <div class="games popular-games">
+    <div class="games-title">
+      <h2 class="games-group">Popular Games</h2>
+      <span class="games-counter">5</span>
+    </div>
+    <div class="games__content">
+      <a href="#">
+        <img src="images/pop-game_1.png" alt="game">
+      </a>
+      <a href="#">
+        <img src="images/pop-game_2.png" alt="game">
+      </a>
+      <a href="#">
+        <img src="images/pop-game_3.png" alt="game">
+      </a>
+      <a href="#">
+        <img src="images/pop-game_4.png" alt="game">
+      </a>
+      <a href="#">
+        <img src="images/pop-game_5.png" alt="game">
+      </a>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__button">
+    <a class="button" href="#">Contact us</a>
+    <a class="button" href="#">FAQ</a>
+  </div>
+  <div class="footer-logo">
+    <a href="">
+      <img src="images/footer-logo.svg" alt="logo">
+    </a>
+  </div>
+  <div class="footer-copyright">
+    <p>©BITEGAMES 2020 All rights reserved</p>
+  </div>
+</footer>
+<div class="subscribe-popup">
+  <div class="subscribe-popup__content">
+    <div class="popup-header">
+      <div class="language-btn" data-btn="ar">AR</div>
+      <div class="logo">
+        <img src="images/jazz-logo.svg" alt="logo">
+      </div>
+    </div>
+    <div class="popup-main">
+      <h2>
+        <span data-lang="title-1">For the best content </span>
+        <br>
+        <span data-lang="title-2">Click below</span>
+
+      </h2>
+      <div class="popup-icon">
+        <img src="images/arrow-down-circle.svg" alt="arrow">
+        <img src="images/arrow-down-circle.svg" alt="arrow">
+        <img src="images/arrow-down-circle.svg" alt="arrow">
+      </div>
+      <p data-lang="access">Get access to an extensive collection of premium games</p>
+      <form class="phone-form">
+        <label for="phone" data-lang="enterNumber">Enter your phone number:</label>
+        <div class="phone-code">+92</div>
+        <div class="phone-valid">
+          <img src="images/check.svg" alt="check-icon">
+        </div>
+        <input type="text" placeholder="XXX XXX XXX" name="phone" id="phone">
+        <button class="button get-otp" disabled data-lang="getOtp">GET OTP</button>
+      </form>
+      <form class="pin-form">
+        <label data-lang="enterPin">Enter PIN </label>
+        <div class="input-wrapper">
+          <img src="images/lock.svg" alt="lock-icon">
+          <input class="pin-input" type="text" maxlength="1" id="pin1" required>
+          <input class="pin-input" type="text" maxlength="1" id="pin2" required>
+          <input class="pin-input" type="text" maxlength="1" id="pin3" required>
+          <input class="pin-input" type="text" maxlength="1" id="pin4" required>
+        </div>
+        <button class="button subscribe" disabled data-lang="subscribeBtn">SUBSCRIBE</button>
+      </form>
+      <span class="payment-per-day" data-lang="paymentPerDay"> 11.95 PKR/Day</span>
+      <div class="not-received-pin">
+        <div class="resend-sms">
+          <a href="#" data-lang="resendSms">
+            Re-send SMS with PIN code
+          </a>
+        </div>
+        <div class="change-number">
+          <a href="#" data-lang="changeNumber">Change number</a>
+        </div>
+      </div>
+      <div class="read-more">
+        <div class="read-more__link">
+          <img src="images/caret-down.svg" alt="caret">
+          <a href="#" data-lang="readMore">Read More</a>
+          <img src="images/caret-down.svg" alt="caret">
+        </div>
+        <div class="read-more__text">
+          <p data-lang="cost">
+            The cost will be added to your mobile phone bill.
+          </p>
+          <p data-lang="ableToPlay">
+            You will be able to play the games already downloaded even if you unsusbcribe
+          </p>
+          <p data-lang="premiumGames">
+            Enjoy over 150 top premium games: ads free and without in-app purchases!
+          </p>
+          <p>
+            <span data-lang="cancel">You can cancel your subscription at anytime from</span>
+            <a href="#" data-lang="myAccount">My account</a>
+            <span data-lang="section">section.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="popup-footer">
+      <nav>
+        <a href="#" data-lang="tAndC">T&C</a>
+        <a href="#" data-lang="contactUs">CONTACT US</a>
+        <a href="#" data-lang="faq">FAQ</a>
+      </nav>
+      <div class="logo">
+        <a href="">
+          <img src="images/popup-logo.svg" alt="logo">
+        </a>
+      </div>
+      <div class="copyright">
+        <p data-lang="copyright">©BITEGAMES 2020 All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/languages.js"></script>
+<script src="scripts/translate.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
